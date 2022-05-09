@@ -1,0 +1,123 @@
+.path {
+  margin: 0 auto 30px;
+  display: flex;
+  background-color: rgba(138, 27, 27, 0.1);
+}
+
+.path p {
+    padding-top: 10px;
+}
+
+.path p:first-child {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+section .filter .title h4 {
+  color: #ffffff;
+  background-color: rgba(68, 3, 3, 1);
+  border-radius: 5px 5px 0px 0px;
+  padding: 15px 0 15px 30px;
+}
+
+section .filter p {
+  padding-left: 30px;
+}
+
+section .card-item {
+  width: 274px;
+  transition: all 0.5s;
+  border-radius: 5px;
+  padding-right: 12px;
+}
+
+section .card-item:hover {
+  transform: scale(1.01);
+}
+
+section .card-item .image {
+  margin: 0px;
+}
+
+section .card-item .card-content .info > p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+section .card-item .card-content .info {
+  padding: 0 10px 10px;
+}
+
+section .card-item .card-content > p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+section .card-item .card-content .info {
+  color: #aa0505;
+}
+
+section .card-item .card-content .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .card-item .card-content .buy-now {
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+section .card-item:hover .buy-now {
+  background-color: #440303;
+  color: #ffffff;
+}
+
+section .card-item:hover .buy-now p {
+  color: #ffffff;
+}
+
+section .card-item .card-content .buy-now i {
+  font-size: 1.5rem;
+}
+
+section .card-item .card-content .buy-now p {
+  padding: 10px 10px 0;
+  margin-bottom: 0px;
+}
+
+section .card-item .card-content .buy-now a {
+  color: #000000;
+}
+
+section .card-item:hover i {
+  color: #ffffff;
+}
+
+section button {
+  background-color: #440303;
+  color: #ffffff;
+  width: 135px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.page-link:nth-child(2) {
+    background-color: #440303;
+    color: #ffffff;
+}
+
+.pagination {
+    margin-bottom: 34px;
+}
+
+a {
+    text-decoration: none;
+}

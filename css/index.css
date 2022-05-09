@@ -1,0 +1,197 @@
+/* 
+.brand-list {
+  margin-top: 50px;
+  display: flex;
+} */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.4;
+  overflow: hidden;
+  display: none;
+  /* giá trị ban đầu none */
+  z-index: 1000;
+}
+
+.banner {
+  margin-bottom: 50px;
+}
+
+.brand-list a img {
+  width: 180px;
+  height: 100px;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+
+.brand-list a img:hover {
+  transform: translateY(-10px);
+  box-shadow: 1px 2px rgba(138, 27, 27, 0.3);
+}
+
+.brand-list a {
+  margin: 0 50px;
+}
+
+.app .content {
+  margin-top: 50px;
+}
+
+.app .content .title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 36px;
+}
+
+.content .title button {
+  background-color: #440303;
+  color: #ffffff;
+  width: 135px;
+  /* height: 40px; */
+  border-radius: 50px;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+  padding: 10px 5px;
+}
+
+.app .content h2,
+.image > h2 {
+  font-size: 2rem;
+  background-image: url(../img/back.jpg);
+  color: #ffffff;
+  width: 350px;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+.content .card-item {
+  width: 274px;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+
+.content .card-item:hover {
+  transform: scale(1.01);
+}
+
+.content .card-item .image {
+  margin: 0px;
+}
+
+.content .card-item .card-content .info > p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.content .card-item .card-content .info {
+  padding: 0 10px 10px;
+}
+
+.content .card-item .card-content > p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.content .card-item .card-content .info {
+  color: #aa0505;
+}
+
+.content .card-item .card-content .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .card-item .card-content .buy-now {
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.content .card-item:hover .buy-now {
+  background-color: #440303;
+  color: #ffffff;
+}
+
+.content .card-item .card-content .buy-now i {
+  font-size: 1.5rem;
+}
+
+.content .card-item .card-content .buy-now p {
+  padding: 10px 10px 0;
+  margin-bottom: 0px;
+}
+
+.content .card-item:hover i {
+  color: #ffffff;
+}
+
+.app > .image {
+  margin: 50px auto;
+}
+
+.app > .image img {
+  width: 324px;
+  height: 300px;
+}
+
+.image > h2 {
+  margin-left: 60px;
+}
+
+.image p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .app > .image img {
+    padding-bottom: 20px;
+  }
+
+  .app .content h2,
+  .image > h2 {
+    font-size: 1.5rem;
+    background-image: url(../img/back.jpg);
+    color: #ffffff;
+    width: 220px;
+    /* height: 35px; */
+    text-align: center;
+    padding: 0;
+    margin-left: 10px;
+  }
+
+  .app .content .title {
+    margin: 0;
+    padding: 0 0 20px 0;
+  }
+
+  .content .title button {
+    width: 100px;
+    /* height: 30px; */
+    border-radius: 50px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 5px 2px;
+    margin-right: 10px;
+  }
+
+  .image > h2 {
+    margin-left: 0;
+  }
+}

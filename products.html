@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="overlay"></div>
+
+      <div class="cart-page">
+        <div class="title">
+          <h3 class="text-center text-uppercase mt-3 mb-3">Giỏ hàng của tôi</h3>
+          <i class="bi bi-x-lg mt-3 close-cart"></i>
+        </div>
+
+        <div class="item">
+          <img class="pe-3" src="/img/item1.png" alt="item1" />
+
+          <div class="info-item">
+            <p class="me-5 mt-3">
+              Black Rouge Air Fit Velvet Tint Ver.3 Dry Fruit
+            </p>
+
+            <div class="item-quatity">
+              <p class="me-3">Số lượng x 1</p>
+              <i class="bi bi-pencil"></i>
+            </div>
+          </div>
+
+          <p class="me-5 mt-3">275,000đ</p>
+          <i class="bi bi-trash mt-3"></i>
+        </div>
+
+        <div class="item">
+          <img class="pe-3" src="/img/item1.png" alt="item1" />
+
+          <div class="info-item">
+            <p class="me-5 mt-3">
+              Black Rouge Air Fit Velvet Tint Ver.3 Dry Fruit
+            </p>
+
+            <div class="item-quatity">
+              <p class="me-3">Số lượng x 1</p>
+              <i class="bi bi-pencil"></i>
+            </div>
+          </div>
+
+          <p class="me-5 mt-3">275,000đ</p>
+          <i class="bi bi-trash mt-3"></i>
+        </div>
+
+        <p class="mt-2 mb-3">Thêm món</p>
+
+        <div class="sum">
+          <p>Tổng tiền</p>
+          <p class="pe-5">550,000đ</p>
+        </div>
+
+        <a href="./payment.html"><button>Thanh toán</button></a>
+      </div>
+
+      <div class="login-page">
+        <div class="login-form">
+          <i class="bi bi-x-lg mt-3 close-login"></i>
+
+          <h2 class="mb-4">Đăng nhập</h2>
+
+          <div class="form username">
+            <i class="bi bi-person"></i>
+            <input type="text" placeholder="Tên đăng nhập">
+          </div>
+
+          <div class="form password">
+            <i class="bi bi-lock"></i>
+            <input type="password" placeholder="Mật khẩu">
+          </div>
+
+          <button class="mb-4">Đăng nhập</button>
+
+          <p class="text-center">Quên mật khẩu?</p>
+
+          <p class="text-center">Bạn chưa có tài khoản?</p>
+
+          <button class="btnRegister mb-4">Đăng ký</button>
+        </div>
+      </div>
+
+      <div class="register-page">
+        <div class="register-form">
+          <i class="bi bi-x-lg mt-3 close-register"></i>
+
+          <h2 class="mb-4">Đăng ký</h2>
+
+          <div class="email form">
+            <i class="bi bi-envelope"></i>
+            <input type="text" placeholder="Nhập email của bạn">
+          </div>
+
+          <div class="password form">
+            <i class="bi bi-lock"></i>
+            <input type="text" placeholder="Mật khẩu">
+          </div>
+
+          <div class="password form">
+            <i class="bi bi-lock"></i>
+            <input type="text" placeholder="Nhập lại mật khẩu">
+          </div>
+
+          <button class="mb-3 mt-2">Đăng ký</button>
+
+          <p>Bạn đã có tài khoản?</p>
+
+          <button class="btn-close-register">Đăng nhập</button>
+        </div>
+      </div>
+
+      <header>
+        <h1 class="name-shop">Daisy Corner</h1>
+
+        <div class="navbar">
+          <div class="logo">
+            <i class="bi bi-flower1"></i>
+          </div>
+
+          <div class="menu">
+            <span class="menu-icon"><i class="bi bi-list"></i></span>
+
+            <ul>
+              <div class="background-menu"></div>
+              <span class="close-menu"><i class="bi bi-x-lg"></i></span>
+              <li><a href="./index.html">Homepage</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./about_us.html">About us</a></li>
+              <li><a href="./news.html">News</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="icon">
+            <div class="box-search" type="text">
+              <i class="bi bi-search"></i>
+              <span class="text-uppercase">search</span>
+            </div>
+
+            <div class="cart">
+              <i class="bi bi-cart"></i>
+              <div class="item-quatity">2</div>
+            </div>
+
+            <div class="login">
+              <i class="bi bi-person"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+        <div class="path">
+            <p class="ms-5 me-5 pe-5">Home / Products / Son tint / Merzy</p>
+            <p class="ms-5 ps-5 text-center">Hiển thị 8 sản phẩm</p>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="row">
+
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="pe-lg-4">
+                                <div class="filter shadow-sm">
+                                    <div class="filter-products">
+                                        <div class="title">
+                                            <h4>Sản phẩm</h4>
+                                        </div>
+        
+                                        <div class="content-filter">
+                                            <p>Son thỏi</p>
+                                            <p>Son tint</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="filter-arrange">
+                                        <div class="title">
+                                            <h4>Sắp xếp</h4>
+                                        </div>
+        
+                                        <div class="content-fiter">
+                                            <p>Sản phẩm mới nhất</p>
+                                            <p>Sản phẩm bán chạy nhất</p>
+                                            <p>Tất cả sản phẩm</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="filter-brand">
+                                        <div class="title">
+                                            <h4>Thương hiệu</h4>
+                                        </div>
+        
+                                        <div class="content-filter">
+                                            <p>Merzy</p>
+                                            <p>Mac</p>
+                                            <p>Bbia</p>
+                                            <p>Lemonade</p>
+                                            <p>Black rouge</p>
+                                            <p>Tất cả các thương hiệu</p>
+                                        </div>
+                                    </div>
+        
+                                    <button class="ms-5 mb-4">Bỏ chọn</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9 col-md-8 col-sm-6">
+                            <div class="row  product-card">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card-item">
+                                        <div class="image">
+                                            <img src="./img/ảnh card.jfif" alt="M2" />
+                                        </div>
+            
+                                        <div class="card-content shadow rounded-bottom">
+                                            <p>Son Kem Lì Merzy Bite The Beat Mellow Tint #M2</p>
+            
+                                            <div class="info">
+                                                <p class="price">119,000đ</p>
+                                                <p class="sold">Đã bán 200</p>
+                                            </div>
+            
+                                            <div class="pb-3 buy-now">
+                                                <i class="bi bi-bag-plus"></i>
+                                                <a href="./detail-product.html"><p>Chi tiết sản phẩm</p></a>
+                                                <a href="./cart.html"><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card-item">
+                                        <div class="image">
+                                            <img src="./img/ảnh card.jfif" alt="M2" />
+                                        </div>
+            
+                                        <div class="card-content shadow rounded-bottom">
+                                            <p>Son Kem Lì Merzy Bite The Beat Mellow Tint #M2</p>
+            
+                                            <div class="info">
+                                                <p class="price">119,000đ</p>
+                                                <p class="sold">Đã bán 200</p>
+                                            </div>
+            
+                                            <div class="pb-3 buy-now">
+                                                <i class="bi bi-bag-plus"></i>
+                                                <a href="./detail-product.html"><p>Chi tiết sản phẩm</p></a>
+                                                <a href="./cart.html"><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card-item">
+                                        <div class="image">
+                                            <img src="./img/ảnh card.jfif" alt="M2" />
+                                        </div>
+            
+                                        <div class="card-content shadow rounded-bottom">
+                                            <p>Son Kem Lì Merzy Bite The Beat Mellow Tint #M2</p>
+            
+                                            <div class="info">
+                                                <p class="price">119,000đ</p>
+                                                <p class="sold">Đã bán 200</p>
+                                            </div>
+            
+                                            <div class="pb-3 buy-now">
+                                                <i class="bi bi-bag-plus"></i>
+                                                <a href="./detail-product.html"><p>Chi tiết sản phẩm</p></a>
+                                                <a href="./cart.html"><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card-item mt-4">
+                                        <div class="image">
+                                            <img src="./img/ảnh card.jfif" alt="M2" />
+                                        </div>
+            
+                                        <div class="card-content shadow rounded-bottom">
+                                            <p>Son Kem Lì Merzy Bite The Beat Mellow Tint #M2</p>
+            
+                                            <div class="info">
+                                                <p class="price">119,000đ</p>
+                                                <p class="sold">Đã bán 200</p>
+                                            </div>
+            
+                                            <div class="pb-3 buy-now">
+                                                <i class="bi bi-bag-plus"></i>
+                                                <a href="./detail-product.html"><p>Chi tiết sản phẩm</p></a>
+                                                <a href="./cart.html"><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card-item mt-4">
+                                        <div class="image">
+                                            <img src="./img/ảnh card.jfif" alt="M2" />
+                                        </div>
+            
+                                        <div class="card-content shadow rounded-bottom">
+                                            <p>Son Kem Lì Merzy Bite The Beat Mellow Tint #M2</p>
+            
+                                            <div class="info">
+                                                <p class="price">119,000đ</p>
+                                                <p class="sold">Đã bán 200</p>
+                                            </div>
+            
+                                            <div class="pb-3 buy-now">
+                                                <i class="bi bi-bag-plus"></i>
+                                                <a href="./detail-product.html"><p>Chi tiết sản phẩm</p></a>
+                                                <a href="./cart.html"><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card-item mt-4">
+                                        <div class="image">
+                                            <img src="./img/ảnh card.jfif" alt="M2" />
+                                        </div>
+            
+                                        <div class="card-content shadow rounded-bottom">
+                                            <p>Son Kem Lì Merzy Bite The Beat Mellow Tint #M2</p>
+            
+                                            <div class="info">
+                                                <p class="price">119,000đ</p>
+                                                <p class="sold">Đã bán 200</p>
+                                            </div>
+            
+                                            <div class="pb-3 buy-now">
+                                                <i class="bi bi-bag-plus"></i>
+                                                <a href="./detail-product.html"><p>Chi tiết sản phẩm</p></a>
+                                                <a href="./cart.html"><i class="bi bi-cart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="register">
+            <h2>Đăng ký nhận thông tin khuyến mãi</h2>
+            <form action class="">
+              <input type="text" placeholder="Nhập email của bạn" />
+              <button>Đăng ký ngay</button>
+            </form>
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="logo-image">
+                        <i class="bi bi-flower1"></i>
+                    </div>
+
+                    <div class="logo-name">Daisy Corner</div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2>Thông Tin Liên Hệ</h2>
+                    <div class="link">
+                        <a href="#">Địa chỉ: 15 Nguyễn Công Hoan, Ba Đình, Hà Nội</a>
+                    </div>
+                    <div class="link">
+                        <a href="tel:0379445182">Điện thoại: 0379445182</a>
+                    </div>
+                    <div class="link">
+                        <a href="mailto: abc@example.com">Email: daisycorner@gmail.com</a>
+                    </div>
+                    <div class="link icon text-center">
+                        <a href="./index.html" class="me-3">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="../html/index.html" class="me-3">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="../html/index.html">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2>Chính Sách Và Quy Định</h2>
+                    <div class="link">
+                        <a href="#">
+                            <p>Chính sách & quy định chung</p>
+                        </a>
+
+                        <a href="#">
+                            <p>Quy định đổi trả</p>
+                        </a>
+
+                        <a href="#">
+                            <p>Khiếu nại, phản hồi</p>
+                        </a>
+
+                        <a href="#">
+                            <p>Phương thức thanh toán</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2>Dịch Vụ Khách Hàng</h2>
+                    <div class="link">
+                        <a href="#">
+                            <p>Giao hàng tận nơi</p>
+                        </a>
+
+                        <a href="#">
+                            <p>Thanh toán qua ví</p>
+                        </a>
+
+                        <a href="#">
+                            <p>Tri ân khách hàng thân thiết</p>
+                        </a>
+
+                        <a href="#">
+                            <p>Chăm sóc, hậu mãi</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daisy Corner</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="overlay"></div>
+
+      <div class="cart-page">
+        <div class="title">
+          <h3 class="text-center text-uppercase mt-3 mb-3">Giỏ hàng của tôi</h3>
+          <i class="bi bi-x-lg mt-3 close-cart"></i>
+        </div>
+
+        <div class="item">
+          <img class="pe-3" src="/img/item1.png" alt="item1" />
+
+          <div class="info-item">
+            <p class="me-5 mt-3">
+              Black Rouge Air Fit Velvet Tint Ver.3 Dry Fruit
+            </p>
+
+            <div class="item-quatity">
+              <p class="me-3">Số lượng x 1</p>
+              <i class="bi bi-pencil"></i>
+            </div>
+          </div>
+
+          <p class="me-5 mt-3">275,000đ</p>
+          <i class="bi bi-trash mt-3"></i>
+        </div>
+
+        <div class="item">
+          <img class="pe-3" src="/img/item1.png" alt="item1" />
+
+          <div class="info-item">
+            <p class="me-5 mt-3">
+              Black Rouge Air Fit Velvet Tint Ver.3 Dry Fruit
+            </p>
+
+            <div class="item-quatity">
+              <p class="me-3">Số lượng x 1</p>
+              <i class="bi bi-pencil"></i>
+            </div>
+          </div>
+
+          <p class="me-5 mt-3">275,000đ</p>
+          <i class="bi bi-trash mt-3"></i>
+        </div>
+
+        <p class="mt-2 mb-3">Thêm món</p>
+
+        <div class="sum">
+          <p>Tổng tiền</p>
+          <p class="pe-5">550,000đ</p>
+        </div>
+
+        <a href="./payment.html"><button>Thanh toán</button></a>
+      </div>
+
+      <div class="login-page">
+        <div class="login-form">
+          <i class="bi bi-x-lg mt-3 close-login"></i>
+
+          <h2 class="mb-4">Đăng nhập</h2>
+
+          <div class="form username">
+            <i class="bi bi-person"></i>
+            <input type="text" placeholder="Tên đăng nhập">
+          </div>
+
+          <div class="form password">
+            <i class="bi bi-lock"></i>
+            <input type="password" placeholder="Mật khẩu">
+          </div>
+
+          <button class="mb-4">Đăng nhập</button>
+
+          <p class="text-center">Quên mật khẩu?</p>
+
+          <p class="text-center">Bạn chưa có tài khoản?</p>
+
+          <button class="btnRegister mb-4">Đăng ký</button>
+        </div>
+      </div>
+
+      <div class="register-page">
+        <div class="register-form">
+          <i class="bi bi-x-lg mt-3 close-register"></i>
+
+          <h2 class="mb-4">Đăng ký</h2>
+
+          <div class="email form">
+            <i class="bi bi-envelope"></i>
+            <input type="text" placeholder="Nhập email của bạn">
+          </div>
+
+          <div class="password form">
+            <i class="bi bi-lock"></i>
+            <input type="text" placeholder="Mật khẩu">
+          </div>
+
+          <div class="password form">
+            <i class="bi bi-lock"></i>
+            <input type="text" placeholder="Nhập lại mật khẩu">
+          </div>
+
+          <button class="mb-3 mt-2">Đăng ký</button>
+
+          <p>Bạn đã có tài khoản?</p>
+
+          <button class="btn-close-register">Đăng nhập</button>
+        </div>
+      </div>
+
+      <header>
+        <h1 class="name-shop">Daisy Corner</h1>
+
+        <div class="navbar">
+          <div class="logo">
+            <i class="bi bi-flower1"></i>
+          </div>
+
+          <div class="menu">
+            <span class="menu-icon"><i class="bi bi-list"></i></span>
+
+            <ul>
+              <div class="background-menu"></div>
+              <span class="close-menu"><i class="bi bi-x-lg"></i></span>
+              <li><a href="./index.html">Homepage</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./about_us.html">About us</a></li>
+              <li><a href="./news.html">News</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="icon">
+            <div class="box-search" type="text">
+              <i class="bi bi-search"></i>
+              <span class="text-uppercase">search</span>
+            </div>
+
+            <div class="cart">
+              <i class="bi bi-cart"></i>
+              <div class="item-quatity">2</div>
+            </div>
+
+            <div class="login">
+              <i class="bi bi-person"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="banner">
+        <img src="./img/index_collection_banner_master.webp" alt="banner" />
+      </div>
+
+      <div class="brand-list">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <a href="./products.html"
+              ><img src="./img/merzy.png" alt="merzy"
+            /></a>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <a href="./products.html"
+              ><img src="./img/bbia.png" alt="bbia"
+            /></a>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <a href="./products.html"
+              ><img src="./img/black rouge.png" alt="black rouge"
+            /></a>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <a href="./products.html">
+              <img src="./img/mac.jpg" alt="mac" /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- .container/.container-fluid > .row > .col > .heading, .products .products-list -->
+      <div class="content">
+        <div class="title p-lg-4">
+          <h2>Sản phẩm bán chạy</h2>
+          <a href="./products.html"><button>Xem thêm</button></a>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="card-item col-lg-3 col-md-6 col-sm-12">
+              <div class="image">
+                <img src="./img/ảnh card.jfif" alt="M2" />
+              </div>
+
+              <div class="card-content shadow">
+                <p>Son Kem Lì Merzy Bite The Beat Mellow Tint</p>
+
+                <div class="info">
+                  <p class="price">119,000đ</p>
+                  <p class="sold">Đã bán 200</p>
+                </div>
+
+                <div class="pb-3 buy-now">
+                  <i class="bi bi-bag-plus"></i>
+                  <p>Chi tiết sản phẩm</p>
+                  <i class="bi bi-cart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-item col-lg-3 col-md-6 col-sm-12">
+              <div class="image">
+                <img src="./img/ảnh card.jfif" alt="M2" />
+              </div>
+
+              <div class="card-content shadow rounded-bottom">
+                <p>Son Kem Lì Merzy Bite The Beat Mellow Tint</p>
+
+                <div class="info">
+                  <p class="price">119,000đ</p>
+
+                  <p class="sold">Đã bán 200</p>
+                </div>
+                <div class="pb-3 buy-now">
+                  <i class="bi bi-bag-plus"></i>
+                  <p>Chi tiết sản phẩm</p>
+                  <i class="bi bi-cart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-item col-lg-3 col-md-6 col-sm-12">
+              <div class="image">
+                <img src="./img/ảnh card.jfif" alt="M2" />
+              </div>
+
+              <div class="card-content shadow rounded-bottom">
+                <p>Son Kem Lì Merzy Bite The Beat Mellow Tint</p>
+
+                <div class="info">
+                  <p class="price">119,000đ</p>
+
+                  <p class="sold">Đã bán 200</p>
+                </div>
+                <div class="pb-3 buy-now">
+                  <i class="bi bi-bag-plus"></i>
+                  <p>Chi tiết sản phẩm</p>
+                  <i class="bi bi-cart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-item col-lg-3 col-md-6 col-sm-12">
+              <div class="image">
+                <img src="./img/ảnh card.jfif" alt="M2" />
+              </div>
+
+              <div class="card-content shadow rounded-bottom">
+                <p>Son Kem Lì Merzy Bite The Beat Mellow Tint</p>
+
+                <div class="info">
+                  <p class="price">119,000đ</p>
+
+                  <p class="sold">Đã bán 200</p>
+                </div>
+
+                <div class="pb-3 buy-now">
+                  <i class="bi bi-bag-plus"></i>
+                  <p>Chi tiết sản phẩm</p>
+                  <i class="bi bi-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="title p-lg-4">
+          <h2>Sản phẩm mới nhất</h2>
+          <a href="../html/products.html"><button>Xem thêm</button></a>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="card-item col-lg-3 col-md-6 col-sm-12">
+              <div class="image">
+                <img src="./img/ảnh card.jfif" alt="M2" />
+              </div>
+              <div class="card-content shadow rounded-bottom">
+                <p>Son Kem Lì Merzy Bite The Beat Mellow Tint</p>
+
+                <div class="info">
+                  <p lass="price">119,000đ</p>
+                  <p class="sold">Đã bán 200</p>
+                </div>
+
+                <div class="pb-3 buy-now">
+                  <i class="bi bi-bag-plus"></i>
+                  <p>Chi tiết sản phẩm</p>
+                  <i class="bi bi-cart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-item col-lg-3 col-md-6 col-sm-12">
+              <div class="image">
+                <img src="./img/ảnh card.jfif" alt="M2" />
+              </div>
+
+              <div class="card-content shadow rounded-bottom">
+                <p>Son Kem Lì Merzy Bite The Beat Mellow Tint</p>
+
+                <div class="info">
+                  <p class="price">119,000đ</p>
+
+                  <p class="sold">Đã bán 200</p>
+                </div>
+
+                <div class="pb-3 buy-now">
+                  <i class="bi bi-bag-plus"></i>
+                  <p>Chi tiết sản phẩm</p>
+                  <i class="bi bi-cart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-item col-lg-3 col-md-6 col-sm-12">
+              <div class="image">
+                <img src="./img/ảnh card.jfif" alt="M2" />
+              </div>
+
+              <div class="card-content shadow rounded-bottom">
+                <p>Son Kem Lì Merzy Bite The Beat Mellow Tint</p>
+
+                <div class="info">
+                  <p class="price">119,000đ</p>
+                  <p class="sold">Đã bán 200</p>
+                </div>
+
+                <div class="pb-3 buy-now">
+                  <i class="bi bi-bag-plus"></i>
+                  <p>Chi tiết sản phẩm</p>
+                  <i class="bi bi-cart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-item col-lg-3 col-md-6 col-sm-12">
+              <div class="image">
+                <img src="./img/ảnh card.jfif" alt="M2" />
+              </div>
+
+              <div class="card-content shadow rounded-bottom">
+                <p>Son Kem Lì Merzy Bite The Beat Mellow Tint</p>
+
+                <div class="info">
+                  <p class="price">119,000đ</p>
+
+                  <p class="sold">Đã bán 200</p>
+                </div>
+
+                <div class="pb-3 buy-now">
+                  <i class="bi bi-bag-plus"></i>
+                  <p>Chi tiết sản phẩm</p>
+                  <i class="bi bi-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="image">
+        <h2 class="mb-4">Góc nhà Daisy</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <img src="./img/pic1.webp" alt="picture" />
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <img src="./img/pic2.webp" alt="picture" />
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <img src="./img/pic3.webp" alt="picture" />
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <img src="./img/pic4.webp" alt="picture" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="register">
+        <h2>Đăng ký nhận thông tin khuyến mãi</h2>
+        <form action class="">
+          <input type="text" placeholder="Nhập email của bạn" />
+          <button>Đăng ký ngay</button>
+        </form>
+      </div>
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="logo-image">
+              <i class="bi bi-flower1"></i>
+            </div>
+
+            <div class="logo-name">Daisy Corner</div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h2>Thông Tin Liên Hệ</h2>
+            <div class="link">
+              <a href="#">Địa chỉ: 15 Nguyễn Công Hoan, Ba Đình, Hà Nội</a>
+            </div>
+            <div class="link">
+              <a href="tel:0379445182">Điện thoại: 0379445182</a>
+            </div>
+            <div class="link">
+              <a href="mailto: abc@example.com">Email: daisycorner@gmail.com</a>
+            </div>
+            <div class="link icon text-center">
+              <a href="./index.html" class="me-3">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a href="../html/index.html" class="me-3">
+                <i class="bi bi-instagram"></i>
+              </a>
+
+              <a href="../html/index.html">
+                <i class="bi bi-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h2>Chính Sách Và Quy Định</h2>
+            <div class="link">
+              <a href="#">
+                <p>Chính sách & quy định chung</p>
+              </a>
+
+              <a href="#">
+                <p>Quy định đổi trả</p>
+              </a>
+
+              <a href="#">
+                <p>Khiếu nại, phản hồi</p>
+              </a>
+
+              <a href="#">
+                <p>Phương thức thanh toán</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h2>Dịch Vụ Khách Hàng</h2>
+            <div class="link">
+              <a href="#">
+                <p>Giao hàng tận nơi</p>
+              </a>
+
+              <a href="#">
+                <p>Thanh toán qua ví</p>
+              </a>
+
+              <a href="#">
+                <p>Tri ân khách hàng thân thiết</p>
+              </a>
+
+              <a href="#">
+                <p>Chăm sóc, hậu mãi</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+.banner {
+  position: relative;
+}
+
+.banner .image {
+  background-image: url(/img/bg-image.webp);
+  height: 500px;
+  background-size: cover;
+  position: relative;
+}
+
+.path {
+  color: rgba(138, 27, 27, 1);
+}
+
+.banner .image p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.detail-item {
+  background-color: rgba(138, 27, 27, 0.1);
+  margin: 50px 0;
+  color: rgba(138, 27, 27, 1);
+}
+
+.detail-item .content {
+  display: flex;
+}
+
+.detail-item .content .image {
+  width: 50%;
+}
+
+.content .image .img-big img {
+  /* border-radius: 10px; */
+  cursor: pointer;
+}
+
+.content .image .img-small {
+  display: flex;
+  cursor: pointer;
+}
+
+.content .image .img-small img {
+  height: 100px;
+}
+
+.content .info-item {
+  margin-left: 50px;
+}
+
+.content .info-item .option-color span {
+  background-color: #ffffff;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(138, 27, 27, 1);
+}
+
+.content .info-item .option-quatity {
+  display: flex
+}
+
+.content .info-item .option-quatity input {
+  width: 5%;
+  height: 25px;
+}
+
+.content .info-item .note {
+  color: rgba(170, 5, 5, 1);
+  font-weight: 500;
+}
+
+.detail-item .content button {
+  background-color: #440303;
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.detail-item .content .buy-now {
+  background-color: rgba(170, 5, 5, 1);
+}
+
+.content .image .img-small img:hover {
+  box-shadow: 1px 2px 5px #8A1B1B;
+}

@@ -1,0 +1,330 @@
+header .name-shop {
+  font-family: "Caveat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8a1b1b;
+  text-transform: uppercase;
+  padding-top: 17px;
+  height: 75px;
+  background-color: rgba(138, 27, 27, 0.2);
+  text-align: center;
+  margin: 0;
+}
+
+header .navbar {
+  height: 60px;
+  margin: 0 30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+header .navbar .logo {
+  color: #8a1b1b;
+  font-size: 2.5rem;
+  margin-left: 40px;
+}
+
+header .navbar ul {
+  padding-top: 15px;
+  display: flex;
+}
+
+header .navbar ul li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+header .navbar ul li a {
+  font-size: 1.25rem;
+  color: #8a1b1b;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+a:first-child {
+  color: #000000;
+}
+
+header .navbar ul li a:hover {
+  color: #000000;
+}
+
+header .navbar .icon {
+  display: flex;
+}
+
+header .navbar .icon i {
+  color: #8a1b1b;
+  font-size: 2rem;
+  margin: 0 15px;
+}
+
+header .navbar .icon .cart {
+  position: relative;
+  padding: 0 15px;
+}
+
+header .navbar .icon .cart .item-quatity {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #8a1b1b;
+  width: 20px;
+  text-align: center;
+  border-radius: 5px;
+
+  position: absolute;
+  top: 0px;
+  left: 35px;
+}
+
+header .navbar .icon .box-search {
+  background-color: rgba(138, 27, 27, 0.2);
+  width: 150px;
+  height: 30px;
+  border-radius: 50px;
+  margin-top: 8px;
+}
+
+header .navbar .icon .box-search i {
+  font-size: 1rem;
+}
+
+header .navbar .icon .box-search span {
+  color: #8a1b1b;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+header .navbar .icon .cart i {
+    margin: 0;
+}
+
+header .navbar .icon .login i {
+    margin: 0 0 0 10px;
+}
+
+.menu-icon,
+.close-menu {
+  display: none;
+  cursor: pointer;
+  padding: 10px 0 0 170px;
+}
+
+.background-menu {
+  width: 200px;
+  height: 75px;
+  background-image: url(/img/Rectangle\ 116.png);
+  background-size: cover;
+  display: none;
+}
+
+.login-page {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(138, 27, 27, 0.2);
+  transform: scale(0);
+  align-items: center;
+  transform-origin: center;
+  transition: all ease 0.35s 0.1s;
+  text-align: center;
+}
+
+.login-form > i {
+  position: absolute;
+  left: 300px;
+  top: 0;
+}
+
+.light1 {
+  background-color: #440303;
+  transition: ease 0.35s;
+}
+
+.show1 {
+  transform: scale(1);
+}
+
+.login-page h2,
+.register-page h2 {
+  color: #8a1b1b;
+}
+
+.login-form {
+  width: 350px;
+  position: relative;
+  height: 420px;
+  margin: 100px auto;
+  font-size: 1.25rem;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.login-page i, .register-page i {
+  color: #8a1b1b;
+}
+
+.form {
+  display: flex;
+}
+
+.login-page input {
+  border: none;
+  border-bottom: 1px solid #8a1b1b;
+  margin: 0 0 20px 20px;
+}
+
+.login-page button,
+.register-page button {
+  background-color: #440303;
+  color: #ffffff;
+  width: 160px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+
+.register-page {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(138, 27, 27, 0.2);
+  transform: scale(0);
+  align-items: center;
+  transform-origin: center;
+  transition: all ease 0.35s 0.1s;
+  text-align: center;
+}
+
+.register-form > i {
+  position: absolute;
+  left: 300px;
+  top: 0;
+}
+
+.register-form {
+  width: 350px;
+  position: relative;
+  height: 420px;
+  margin: 100px auto;
+  font-size: 1.25rem;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.register-page input {
+  border: none;
+  border-bottom: 1px solid #8a1b1b;
+  margin: 0 0 20px 20px;
+}
+
+.light2 {
+    background-color: #440303;
+    transition: ease 0.35s;
+  }
+  
+  .show2 {
+    transform: scale(1);
+  }
+
+
+@media (max-width: 576px) {
+  header .navbar .icon .cart .item-quatity {
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #8a1b1b;
+    width: 15px;
+    text-align: center;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 0px;
+    left: 15px;
+  }
+
+  header .navbar .icon .box-search {
+    background-color: #ffffff;
+    border-radius: 0px;
+    margin-top: 4px;
+    width: 40px;
+  }
+
+  header .navbar .icon .box-search i {
+      margin: 0;
+  }
+
+
+
+  header .navbar .icon .box-search i {
+    font-size: 1.5rem;
+  }
+
+  header .navbar .icon i {
+    font-size: 1.5rem;
+  }
+
+  .box-search span {
+    display: none;
+  }
+
+  header .navbar {
+    position: relative;
+    margin: 0 10px;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #8a1b1b;
+    position: absolute;
+    padding: 0;
+  }
+
+  header .navbar .logo {
+    position: absolute;
+    top: 0;
+    margin-left: 0px;
+    left: 50%;
+  }
+
+  header .navbar ul {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100vh;
+    overflow: hidden;
+
+    background-color: #ffffff;
+    flex-direction: column;
+    color: rgba(138, 27, 27, 1);
+
+    transition: all 0.3s;
+    z-index: 1001;
+    padding: 0;
+  }
+
+  header .navbar ul li {
+    padding: 10px 30px;
+  }
+
+  header .navbar .icon .cart {
+    position: relative;
+    padding: 0;
+  }
+}
