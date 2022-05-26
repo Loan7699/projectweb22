@@ -1,13 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+
+    <link rel="shortcut icon" href="./img/favicon (1).ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon (1).ico" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <div class="cart-page">
+      <div class="title">
+        <h3 class="text-center text-uppercase mt-3 mb-3">Giỏ hàng của tôi</h3>
+        <i class="bi bi-x-lg mt-3 close-cart"></i>
+      </div>
+
+      <!-- <div class="item">
+        <img class="pe-3" src="/img/item1.png" alt="item1" />
+
+        <div class="info-item">
+          <p class="me-5 mt-3">
+            Black Rouge Air Fit Velvet Tint Ver.3 Dry Fruit
+          </p>
+
+          <div class="item-quantity">
+            <p>
+              <span>Số lượng x</span>
+              <span class="quantity-product">1</span>
+            </p>
+            <i class="bi bi-pencil"></i>
+          </div>
+        </div>
+
+        <p class="me-5 mt-3 price">275000</p>
+        <i class="bi bi-trash mt-3"></i>
+      </div> -->
+
+      <!-- <a href="./products.html"><p class="mt-2 mb-3">Thêm món</p></a> -->
+
+      <div class="sum">
+        <p>Tổng tiền</p>
+        <span class="pe-5">0</span>
+      </div>
+
+      <a href="./payment.html"><button>Thanh toán</button></a>
+    </div>
+
+    <div class="login-page">
+      <div class="login-form">
+        <i class="bi bi-x-lg mt-3 close-login"></i>
+
+        <h2 class="mb-4">Đăng nhập</h2>
+
+        <div class="form username">
+          <i class="bi bi-person"></i>
+          <input type="text" placeholder="Tên đăng nhập" />
+        </div>
+
+        <div class="form password">
+          <i class="bi bi-lock"></i>
+          <input type="password" placeholder="Mật khẩu" />
+        </div>
+
+        <button class="mb-4">Đăng nhập</button>
+
+        <p class="text-center">Quên mật khẩu?</p>
+
+        <p class="text-center">Bạn chưa có tài khoản?</p>
+
+        <button class="btnRegister mb-4">Đăng ký</button>
+      </div>
+    </div>
+
+    <div class="register-page">
+      <div class="register-form">
+        <i class="bi bi-x-lg mt-3 close-register"></i>
+
+        <h2 class="mb-4">Đăng ký</h2>
+
+        <div class="email form">
+          <i class="bi bi-envelope"></i>
+          <input type="text" placeholder="Nhập email của bạn" />
+        </div>
+
+        <div class="password form">
+          <i class="bi bi-lock"></i>
+          <input type="text" placeholder="Mật khẩu" />
+        </div>
+
+        <div class="password form">
+          <i class="bi bi-lock"></i>
+          <input type="text" placeholder="Nhập lại mật khẩu" />
+        </div>
+
+        <button class="mb-3 mt-2">Đăng ký</button>
+
+        <p>Bạn đã có tài khoản?</p>
+
+        <button class="btn-close-register">Đăng nhập</button>
+      </div>
+    </div>
+
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <i class="bi bi-flower1 pt-lg-2 pt-md-2 pt-0"></i>
+          <h1 class="name-shop ms-3">Daisy Corner</h1>
+        </div>
+
+        <div class="menu">
+          <span class="menu-icon"><i class="bi bi-list"></i></span>
+
+          <ul>
+            <div class="background-menu"></div>
+            <span class="close-menu"><i class="bi bi-x-lg"></i></span>
+            <li><a href="./index.html">Homepage</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./news.html" class="title-page">News</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./aboutus.html">About us</a></li>
+          </ul>
+        </div>
+
+        <div class="icon">
+          <div class="box-search me-1" type="text">
+            <!--
+              <span class="text-uppercase">search</span> -->
+            <input type="text" placeholder="SEARCH" />
+            <i class="bi bi-search"></i>
+          </div>
+
+          <div class="cart">
+            <i class="bi bi-cart"></i>
+            <span class="item-quantity">0</span>
+          </div>
+
+          <div class="login">
+            <i class="bi bi-person"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="background"></div>
+
+    <h3 class="text-center text-uppercase mt-4">Tin tức</h3>
+
+    <div class="news mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-5">
+            <div class="img">
+              <img src="./img/Rectangle 108.png" alt="ảnh" />
+            </div>
+
+            <div class="page mt-4">
+              <div class="cover-img">
+                <img src="./img/Rectangle 110.png" alt="" />
+
+                <div class="btn-like">
+                  <i class="bi bi-hand-thumbs-up-fill"></i>
+                  <p class="ms-2">Thích</p>
+                </div>
+              </div>
+
+              <div class="post">
+                <div class="content-post">
+                    <div class="title-post">
+                        <div class="name-post">
+                          <i class="bi bi-flower1"></i>
+                          <h4 class="ms-2">Daisy corner</h4>
+                        </div>
+      
+                        <i class="bi bi-facebook"></i>
+                      </div>
+      
+                      <div class="active-status">
+                        <p>22 phút trước</p>
+                      </div>
+      
+                      <p class="pe-2 ps-2">
+                        GỌI TÊN 4 MÀU MLBB NHÀ MERZY<br />🌷 Những màu son MLBB chưa
+                        bao giờ ngừng hot trong những năm gần đây.<br />Bạn đã cập
+                        nhật các màu MLBB xinh xỉu của Merzy chưa?<br />M12. Lo-fi
+                        Indigo - tone hồng nhẹ nhàng pha đất vừa đủ, trở thành một sắc
+                        ngọt ngào và tự nhiên cho thần thái rạng rỡ những ngày lười
+                        make-up ... <span>Xem thêm</span>
+                      </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+            <div class="card-news">
+              <img src="./img/Rectangle 107.png" alt="ảnh" />
+              <div class="detail-news">
+                <h4>Review NOIR In the Mellow Tint</h4>
+                <div class="info-news">
+                  <div class="time content">
+                    <i class="bi bi-calendar-day"></i>
+                    <p>23/12/21</p>
+                  </div>
+  
+                  <div class="brand-news content">
+                    <i class="bi bi-person"></i>
+                    <p>MERZYVN</p>
+                  </div>
+  
+                  <div class="message content">
+                    <i class="bi bi-chat-dots"></i>
+                    <p>0</p>
+                  </div>
+                </div>
+                <p>Thời điểm cuối năm, khi mùa lễ hội trở nên rộn ràng chính là lúc hội chị em lại xúng xính làm đẹp. Đây cũng là thời điểm những màu son bí ẩn, quyến rũ được dịp thể hiện “quyền n...</p>
+              </div>
+            </div>
+
+            <div class="card-news">
+              <img src="./img/Rectangle 10.png" alt="ảnh" />
+              <div class="detail-news">
+                <h4>Review NOIR In the Mellow Tint</h4>
+                <div class="info-news">
+                  <div class="time content">
+                    <i class="bi bi-calendar-day"></i>
+                    <p>23/12/21</p>
+                  </div>
+  
+                  <div class="brand-news content">
+                    <i class="bi bi-person"></i>
+                    <p>MERZYVN</p>
+                  </div>
+  
+                  <div class="message content">
+                    <i class="bi bi-chat-dots"></i>
+                    <p>0</p>
+                  </div>
+                </div>
+  
+                <p>Tỏa nhiệt khắp các hội nhóm Facebook và TikTok những ngày qua, những thỏi son Hàn Quốc vỏ tím “xinh điên đảo” của nhà Merzy vừa ra mắt khiến các chị em không ngừng tag & share. ...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+            <div class="card-news">
+              <img src="./img/Rectangle 17.png" alt="ảnh" />
+              <div class="detail-news">
+                <h4>Review NOIR In the Mellow Tint</h4>
+                <div class="info-news">
+                  <div class="time content">
+                    <i class="bi bi-calendar-day"></i>
+                    <p>23/12/21</p>
+                  </div>
+  
+                  <div class="brand-news content">
+                    <i class="bi bi-person"></i>
+                    <p>MERZYVN</p>
+                  </div>
+  
+                  <div class="message content">
+                    <i class="bi bi-chat-dots"></i>
+                    <p>0</p>
+                  </div>
+                </div>
+  
+                <p>Xuất hiện với vẻ ngoài xinh đẹp trong ngày đầu năm sẽ giúp bạn trở nên nổi bật và thu hút ánh nhìn của mọi người xung quanh với 3 cách trang điểm làm đẹp đón tết dưới đây.</p>
+              </div>
+            </div>
+
+            <div class="card-news">
+              <img src="./img/Rectangle 107 (1).png" alt="ảnh" />
+              <div class="detail-news">
+                <h4>Review NOIR In the Mellow Tint</h4>
+                <div class="info-news">
+                  <div class="time content">
+                    <i class="bi bi-calendar-day"></i>
+                    <p>23/12/21</p>
+                  </div>
+  
+                  <div class="brand-news content">
+                    <i class="bi bi-person"></i>
+                    <p>MERZYVN</p>
+                  </div>
+  
+                  <div class="message content">
+                    <i class="bi bi-chat-dots"></i>
+                    <p>0</p>
+                  </div>
+                </div>
+  
+                <p>Những màu son tone cam đất luôn nằm trong những xu hướng makeup mà rất nhiều bạn quan tâm. Merzy với những gợi ý màu son tone cam đất sẽ giúp ích cho bạn cho được một màu son vừ...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+
+    <div class="register mt-5">
+        <h2>Đăng ký nhận thông tin khuyến mãi</h2>
+        <form action class="">
+          <input type="text" placeholder="Nhập email của bạn" />
+          <button>Đăng ký ngay</button>
+        </form>
+      </div>
+
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="logo-image">
+                <i class="bi bi-flower1"></i>
+              </div>
+
+              <div class="logo-name">Daisy Corner</div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h2>Thông Tin Liên Hệ</h2>
+              <div class="link">
+                <a href="#">Địa chỉ: 15 Nguyễn Công Hoan, Ba Đình, Hà Nội</a>
+              </div>
+              <div class="link">
+                <a href="tel:0379445182">Điện thoại: 0379445182</a>
+              </div>
+              <div class="link">
+                <a href="mailto: abc@example.com"
+                  >Email: daisycorner@gmail.com</a
+                >
+              </div>
+              <div class="link icon text-center">
+                <a href="./index.html" class="me-3">
+                  <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="../html/index.html" class="me-3">
+                  <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="../html/index.html">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h2>Chính Sách Và Quy Định</h2>
+              <div class="link">
+                <a href="#">
+                  <p>Chính sách & quy định chung</p>
+                </a>
+
+                <a href="#">
+                  <p>Quy định đổi trả</p>
+                </a>
+
+                <a href="#">
+                  <p>Khiếu nại, phản hồi</p>
+                </a>
+
+                <a href="#">
+                  <p>Phương thức thanh toán</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h2>Dịch Vụ Khách Hàng</h2>
+              <div class="link">
+                <a href="#">
+                  <p>Giao hàng tận nơi</p>
+                </a>
+
+                <a href="#">
+                  <p>Thanh toán qua ví</p>
+                </a>
+
+                <a href="#">
+                  <p>Tri ân khách hàng thân thiết</p>
+                </a>
+
+                <a href="#">
+                  <p>Chăm sóc, hậu mãi</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
     <script type="module" src="/js/index.js"></script>
-</body>
+    <script type="module" src="/js/cart.js"></script>
+  </body>
 </html>

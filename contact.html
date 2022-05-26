@@ -1,13 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <link rel="shortcut icon" href="./img/favicon (1).ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon (1).ico" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <div class="cart-page">
+      <div class="title">
+        <h3 class="text-center text-uppercase mt-3 mb-3">Giỏ hàng của tôi</h3>
+        <i class="bi bi-x-lg mt-3 close-cart"></i>
+      </div>
+
+      <!-- <div class="item">
+        <img class="pe-3" src="/img/item1.png" alt="item1" />
+
+        <div class="info-item">
+          <p class="me-5 mt-3">
+            Black Rouge Air Fit Velvet Tint Ver.3 Dry Fruit
+          </p>
+
+          <div class="item-quantity">
+            <p>
+              <span>Số lượng x</span>
+              <span class="quantity-product">1</span>
+            </p>
+            <i class="bi bi-pencil"></i>
+          </div>
+        </div>
+
+        <p class="me-5 mt-3 price">275000</p>
+        <i class="bi bi-trash mt-3"></i>
+      </div> -->
+
+      <!-- <a href="./products.html"><p class="mt-2 mb-3">Thêm món</p></a> -->
+
+      <div class="sum">
+        <p>Tổng tiền</p>
+        <span class="pe-5">0</span>
+      </div>
+
+      <a href="./payment.html"><button>Thanh toán</button></a>
+    </div>
+
+    <div class="login-page">
+      <div class="login-form">
+        <i class="bi bi-x-lg mt-3 close-login"></i>
+
+        <h2 class="mb-4">Đăng nhập</h2>
+
+        <div class="form username">
+          <i class="bi bi-person"></i>
+          <input type="text" placeholder="Tên đăng nhập" />
+        </div>
+
+        <div class="form password">
+          <i class="bi bi-lock"></i>
+          <input type="password" placeholder="Mật khẩu" />
+        </div>
+
+        <button class="mb-4">Đăng nhập</button>
+
+        <p class="text-center">Quên mật khẩu?</p>
+
+        <p class="text-center">Bạn chưa có tài khoản?</p>
+
+        <button class="btnRegister mb-4">Đăng ký</button>
+      </div>
+    </div>
+
+    <div class="register-page">
+      <div class="register-form">
+        <i class="bi bi-x-lg mt-3 close-register"></i>
+
+        <h2 class="mb-4">Đăng ký</h2>
+
+        <div class="email form">
+          <i class="bi bi-envelope"></i>
+          <input type="text" placeholder="Nhập email của bạn" />
+        </div>
+
+        <div class="password form">
+          <i class="bi bi-lock"></i>
+          <input type="text" placeholder="Mật khẩu" />
+        </div>
+
+        <div class="password form">
+          <i class="bi bi-lock"></i>
+          <input type="text" placeholder="Nhập lại mật khẩu" />
+        </div>
+
+        <button class="mb-3 mt-2">Đăng ký</button>
+
+        <p>Bạn đã có tài khoản?</p>
+
+        <button class="btn-close-register">Đăng nhập</button>
+      </div>
+    </div>
+
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <i class="bi bi-flower1 pt-lg-2 pt-md-2 pt-0"></i>
+          <h1 class="name-shop ms-3">Daisy Corner</h1>
+        </div>
+
+        <div class="menu">
+          <span class="menu-icon"><i class="bi bi-list"></i></span>
+
+          <ul>
+            <div class="background-menu"></div>
+            <span class="close-menu"><i class="bi bi-x-lg"></i></span>
+            <li><a href="./index.html">Homepage</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="./contact.html" class="title-page">Contact</a></li>
+            <li><a href="./aboutus.html">About us</a></li>
+          </ul>
+        </div>
+
+        <div class="icon">
+          <div class="box-search me-1" type="text">
+            <!--
+              <span class="text-uppercase">search</span> -->
+            <input type="text" placeholder="SEARCH" />
+            <i class="bi bi-search"></i>
+          </div>
+
+          <div class="cart">
+            <i class="bi bi-cart"></i>
+            <span class="item-quantity">0</span>
+          </div>
+
+          <div class="login">
+            <i class="bi bi-person"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="contact-page mb-1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+            <div class="box-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1381247948016!2d105.81332801424533!3d21.027158593210455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab6e6c168b51%3A0x4ad83c125486eec4!2zMTUgTmd1eeG7hW4gQ8O0bmcgSG9hbiwgR2nhuqNuZyBWw7UsIEJhIMSQw6xuaCwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1653312585662!5m2!1sen!2s"
+                width="100%"
+                height="600"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+            <div class="title-contact mb-3">
+              <h2>Liên Hệ</h2>
+            </div>
+
+            <div class="box-info">
+              <ul class="info-list">
+                <li>
+                  <h4>Địa chỉ chúng tôi</h4>
+                  <p>
+                    15 Nguyễn Công Hoan, phường Ngọc khánh, quận Ba Đình, thành
+                    phố Hà Nội
+                  </p>
+                </li>
+                <li>
+                  <h4>Email chúng tôi</h4>
+                  <p>daisycorner@gmail.com</p>
+                </li>
+                <li>
+                  <h4>Điện thoại</h4>
+                  <p>0379445182</p>
+                </li>
+                <li>
+                  <h4>Thời gian làm việc</h4>
+                  <p>Thứ 2 đến Thứ 7 từ 9h00 đến 21h00</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="box-send mt-2">
+              <div class="title-send mb-3">
+                <h2>Gửi Thắc Mắc Cho Chúng Tôi</h2>
+              </div>
+
+              <div class="form">
+                <div class="name">
+                  <input type="text" placeholder="Tên của bạn" />
+                </div>
+                <div class="method-contact">
+                  <div class="row">
+                    <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                      <input type="email" placeholder="Email của bạn" class="mail"/>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                        <input type="tel" placeholder="Số điện thoại của bạn" class="tel"/>
+                      </div>
+                  </div>
+                </div>
+                <div class="idea">
+                  <textarea placeholder="Nội dung"></textarea>
+                </div>
+              </div>
+
+              <button>Gửi cho chúng tôi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="register">
+      <h2>Đăng ký nhận thông tin khuyến mãi</h2>
+      <form action class="">
+        <input type="text" placeholder="Nhập email của bạn" />
+        <button>Đăng ký ngay</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="logo-image">
+              <i class="bi bi-flower1"></i>
+            </div>
+
+            <div class="logo-name">Daisy Corner</div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h2>Thông Tin Liên Hệ</h2>
+            <div class="link">
+              <a href="#">Địa chỉ: 15 Nguyễn Công Hoan, Ba Đình, Hà Nội</a>
+            </div>
+            <div class="link">
+              <a href="tel:0379445182">Điện thoại: 0379445182</a>
+            </div>
+            <div class="link">
+              <a href="mailto: abc@example.com">Email: daisycorner@gmail.com</a>
+            </div>
+            <div class="link icon text-center">
+              <a href="./index.html" class="me-3">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a href="../html/index.html" class="me-3">
+                <i class="bi bi-instagram"></i>
+              </a>
+
+              <a href="../html/index.html">
+                <i class="bi bi-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h2>Chính Sách Và Quy Định</h2>
+            <div class="link">
+              <a href="#">
+                <p>Chính sách & quy định chung</p>
+              </a>
+
+              <a href="#">
+                <p>Quy định đổi trả</p>
+              </a>
+
+              <a href="#">
+                <p>Khiếu nại, phản hồi</p>
+              </a>
+
+              <a href="#">
+                <p>Phương thức thanh toán</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h2>Dịch Vụ Khách Hàng</h2>
+            <div class="link">
+              <a href="#">
+                <p>Giao hàng tận nơi</p>
+              </a>
+
+              <a href="#">
+                <p>Thanh toán qua ví</p>
+              </a>
+
+              <a href="#">
+                <p>Tri ân khách hàng thân thiết</p>
+              </a>
+
+              <a href="#">
+                <p>Chăm sóc, hậu mãi</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="/js/index.js"></script>
-</body>
+    <script type="module" src="/js/cart.js"></script>
+  </body>
 </html>

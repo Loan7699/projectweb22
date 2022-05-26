@@ -1,0 +1,68 @@
+.contact-page h2 {
+  border-bottom: 1px solid #000000;
+}
+
+.box-send .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.method-contact {
+  display: flex;
+}
+
+.box-info li {
+  list-style-type: none;
+}
+
+.info-list h4 {
+  font-size: 1.15rem;
+  color: #000000;
+  font-weight: 400;
+}
+
+.info-list p {
+  font-weight: 300;
+  color: #666666;
+}
+
+.box-send .form input,
+textarea {
+  padding: 10px;
+  width: 100%;
+  margin: 0 0 32px 36px;
+}
+
+.box-send .form .name,
+.idea {
+  width: 78%;
+}
+
+.box-send button {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  margin: 0 0 24px 25%;
+}
+
+@media (max-width: 992px) {
+  .box-send .form input,
+  textarea {
+    width: 78%;
+    margin-bottom: 32px;
+  }
+
+  .box-send .form .name,
+  .idea {
+    width: 100%;
+  }
+
+  .contact-page h2 {
+      margin-top: 24px;
+  }
+}

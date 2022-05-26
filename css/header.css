@@ -1,32 +1,35 @@
+
 header .name-shop {
   font-family: "Caveat", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: #8a1b1b;
   text-transform: uppercase;
-  padding-top: 17px;
-  height: 75px;
-  background-color: rgba(138, 27, 27, 0.2);
-  text-align: center;
-  margin: 0;
+  /* text-align: center; */
+  /* margin: 0; */
+}
+
+header .logo {
+  display: flex;
 }
 
 header .navbar {
-  height: 60px;
+  /* height: 60px; */
   margin: 0 30px;
-  padding: 0;
+  /* padding: 0; */
   display: flex;
   flex-wrap: nowrap;
 }
 
-header .navbar .logo {
+header .navbar .logo i {
   color: #8a1b1b;
   font-size: 2.5rem;
-  margin-left: 40px;
+  margin-top: 12px;
 }
 
 header .navbar ul {
-  padding-top: 15px;
+  padding-top: 12px;
+  /* padding-left: 0; */
   display: flex;
 }
 
@@ -44,12 +47,8 @@ header .navbar ul li a {
   text-decoration: none;
 }
 
-a:first-child {
-  color: #000000;
-}
-
 header .navbar ul li a:hover {
-  color: #000000;
+  color: rgba(138, 27, 27, 0.6);
 }
 
 header .navbar .icon {
@@ -67,48 +66,43 @@ header .navbar .icon .cart {
   padding: 0 15px;
 }
 
-header .navbar .icon .cart .item-quatity {
+header .navbar .icon .cart .item-quantity {
   color: #ffffff;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   background-color: #8a1b1b;
-  width: 20px;
+  width: 18px;
   text-align: center;
   border-radius: 5px;
 
   position: absolute;
-  top: 0px;
+  top: -10px;
   left: 35px;
 }
 
-header .navbar .icon .box-search {
-  background-color: rgba(138, 27, 27, 0.2);
-  width: 150px;
-  height: 30px;
-  border-radius: 50px;
-  margin-top: 8px;
-}
-
 header .navbar .icon .box-search i {
-  font-size: 1rem;
+  display: none;
 }
 
-header .navbar .icon .box-search span {
+header .navbar .icon .box-search input {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(138, 27, 27, 0.2);
   color: #8a1b1b;
-  font-size: 1.25rem;
-  font-weight: 300;
+  border: 1px solid rgba(138, 27, 27, 0.2);
 }
 
 header .navbar .icon .cart i {
-    margin: 0;
+  margin: 0;
 }
 
 header .navbar .icon .login i {
-    margin: 0 0 0 10px;
+  margin: 0 0 0 10px;
 }
 
-.menu-icon,
-.close-menu {
+.menu-icon, .close-menu {
   display: none;
   cursor: pointer;
   padding: 10px 0 0 170px;
@@ -117,7 +111,8 @@ header .navbar .icon .login i {
 .background-menu {
   width: 200px;
   height: 75px;
-  background-image: url(/img/Rectangle\ 116.png);
+  
+  background-image: url(../img/Rectangle\ 116.png);
   background-size: cover;
   display: none;
 }
@@ -130,7 +125,8 @@ header .navbar .icon .login i {
   right: 0;
   z-index: 100;
   background-color: rgba(138, 27, 27, 0.2);
-  transform: scale(0);
+  /* transform: scale(0); */
+  display: none;
   align-items: center;
   transform-origin: center;
   transition: all ease 0.35s 0.1s;
@@ -144,12 +140,13 @@ header .navbar .icon .login i {
 }
 
 .light1 {
-  background-color: #440303;
+  background-color:	#AAAAAA;
   transition: ease 0.35s;
 }
 
 .show1 {
-  transform: scale(1);
+  /* transform: scale(1); */
+  display: block;
 }
 
 .login-page h2,
@@ -167,7 +164,8 @@ header .navbar .icon .login i {
   padding: 30px;
 }
 
-.login-page i, .register-page i {
+.login-page i,
+.register-page i {
   color: #8a1b1b;
 }
 
@@ -203,8 +201,9 @@ header .navbar .icon .login i {
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: rgba(138, 27, 27, 0.2);
-  transform: scale(0);
+  background-color: #cccccc;
+  /* transform: scale(0); */
+  display: none;
   align-items: center;
   transform-origin: center;
   transition: all ease 0.35s 0.1s;
@@ -234,18 +233,81 @@ header .navbar .icon .login i {
 }
 
 .light2 {
-    background-color: #440303;
-    transition: ease 0.35s;
-  }
-  
-  .show2 {
-    transform: scale(1);
-  }
+  background-color: #aaaaaa;
+  transition: ease 0.35s;
+}
+
+.show2 {
+  /* transform: scale(1); */
+  display: block;
+}
 
 
-@media (max-width: 576px) {
-  header .navbar .icon .cart .item-quatity {
-    font-size: 0.8rem;
+@media (max-width: 1200px) {
+
+  header .navbar .logo i {
+    margin-top: 0;
+  }
+
+  header .name-shop {
+    display: none;
+  }
+
+  header .navbar .icon .box-search input {
+    display: none;
+  }
+
+  header .navbar .icon .box-search i {
+    font-size: 1.85rem;
+    display: block;
+    margin: 0;
+    padding: 4px 5px 0px 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  header .navbar ul li a {
+    margin: 0 5px;
+    font-size: 1.1rem;
+  }
+
+  header .navbar .logo i {
+    font-size: 2rem;
+  }
+
+  header .navbar .icon .cart {
+    padding: 0;
+  }
+
+  header .navbar .icon .cart .item-quantity {
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: #8a1b1b;
+    width: 15px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+  }
+
+  header .navbar {
+    margin: 0 20px;
+  }
+
+  header .navbar .icon i {
+    margin: 0 5px;
+    font-size: 1.75rem;
+  }
+
+  header .navbar .icon .box-search i {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 756px) {
+  header .navbar .icon .cart .item-quantity {
+    font-size: 1rem;
     font-weight: 500;
     background-color: #8a1b1b;
     width: 15px;
@@ -253,25 +315,12 @@ header .navbar .icon .login i {
     border-radius: 5px;
 
     position: absolute;
-    top: 0px;
+    top: -12px;
     left: 15px;
   }
 
-  header .navbar .icon .box-search {
-    background-color: #ffffff;
-    border-radius: 0px;
-    margin-top: 4px;
-    width: 40px;
-  }
-
-  header .navbar .icon .box-search i {
-      margin: 0;
-  }
-
-
-
-  header .navbar .icon .box-search i {
-    font-size: 1.5rem;
+  header .navbar .logo i {
+    font-size: 2rem;
   }
 
   header .navbar .icon i {
@@ -284,22 +333,29 @@ header .navbar .icon .login i {
 
   header .navbar {
     position: relative;
-    margin: 0 10px;
+    margin: 0 20px;
   }
 
   .menu-icon {
     display: inline-block;
     font-size: 1.5rem;
     color: #8a1b1b;
-    position: absolute;
+    /* position: absolute; */
     padding: 0;
   }
 
   header .navbar .logo {
     position: absolute;
-    top: 0;
-    margin-left: 0px;
+    /* top: 0; */
+    /* margin-left: 0px; */
     left: 50%;
+  }
+
+  header .navbar .icon .box-search i {
+    font-size: 1.3rem;
+    display: block;
+    margin: 0;
+    padding: 4px 5px 0px 0px;
   }
 
   header .navbar ul {

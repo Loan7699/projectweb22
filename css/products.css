@@ -1,16 +1,22 @@
 .path {
-  margin: 0 auto 30px;
+  /* margin: 0 auto 30px; */
   display: flex;
   background-color: rgba(138, 27, 27, 0.1);
 }
 
-.path p {
-    padding-top: 10px;
+.path i {
+  display: none;
 }
 
-.path p:first-child {
+.path .path-detail {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 300;
+  margin: 0 0 0 30px;
+  padding: 10px 0;
+}
+
+section {
+  margin: 0 48px;
 }
 
 section .filter .title h4 {
@@ -20,15 +26,21 @@ section .filter .title h4 {
   padding: 15px 0 15px 30px;
 }
 
-section .filter p {
+section .filter .arrange-price > p, section .filter-arrange .content-filter > p {
   padding-left: 30px;
 }
 
+.arrange-price {
+  display: flex;
+  position: relative;
+}
+
 section .card-item {
-  width: 274px;
+  /* width: 274px; */
   transition: all 0.5s;
   border-radius: 5px;
-  padding-right: 12px;
+  /* padding-right: 12px; */
+  z-index: 1000;
 }
 
 section .card-item:hover {
@@ -83,15 +95,17 @@ section .card-item:hover .buy-now p {
 
 section .card-item .card-content .buy-now i {
   font-size: 1.5rem;
+  padding-top: 16px;
 }
 
 section .card-item .card-content .buy-now p {
-  padding: 10px 10px 0;
+  padding: 5px 10px 0;
   margin-bottom: 0px;
 }
 
 section .card-item .card-content .buy-now a {
   color: #000000;
+  padding-top: 15px;
 }
 
 section .card-item:hover i {
@@ -107,17 +121,84 @@ section button {
   font-size: 1.25rem;
   border: none;
   cursor: pointer;
+  margin-left: 48px;
 }
 
-.page-link:nth-child(2) {
+.option-price {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 20px;
+}
+
+.option-price p {
+  margin: 0;
+}
+/* .page-link:nth-child(2) {
     background-color: #440303;
     color: #ffffff;
 }
 
 .pagination {
     margin-bottom: 34px;
-}
+} */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  section {
+    margin: 0 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .path i {
+    display: block;
+    margin: 0 0 0 20px;
+    font-size: 1.5rem;
+    padding-top: 8px;
+    color: #8a1b1b;
+  }
+
+  section .filter {
+    position: absolute;
+    top: -45px;
+    left: 30px;
+    width: 30%;
+    display: none;
+    z-index: 1001;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  section {
+    position: relative;
+    margin: 0 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  section .filter {
+    width: 40%;
+  }
+
+  section {
+    margin: 50px 0 0 0;
+  }
+
+  section button {
+    margin-left: 24px;
+  }
 }

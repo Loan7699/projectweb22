@@ -9,34 +9,39 @@
   position: relative;
 }
 
-.path {
-  color: rgba(138, 27, 27, 1);
+.path p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding: 20px 0;
+  margin-bottom: 0;
 }
 
 .banner .image p {
-    color: #ffffff;
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 250px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 250px;
 }
 
 .detail-item {
-  background-color: rgba(138, 27, 27, 0.1);
-  margin: 50px 0;
+  color: #000000;
+}
+
+.detail-item h3 {
+  font-weight: 500;
+  color: #440303;
+}
+
+.detail-item h2 {
   color: rgba(138, 27, 27, 1);
 }
 
-.detail-item .content {
-  display: flex;
-}
-
-.detail-item .content .image {
-  width: 50%;
-}
-
 .content .image .img-big img {
-  /* border-radius: 10px; */
   cursor: pointer;
+  height: 400px;
+  width: 500px;
+  border-radius: 5px;
 }
 
 .content .image .img-small {
@@ -46,25 +51,37 @@
 
 .content .image .img-small img {
   height: 100px;
+  width: 100px;
 }
 
 .content .info-item {
   margin-left: 50px;
 }
 
-.content .info-item .option-color span {
-  background-color: #ffffff;
-  margin-right: 10px;
-  padding: 5px;
+.content .info-item .option-color {
+  display: flex;
+}
+
+.content .info-item .option-color p {
+  margin-right: 29px;
+  color: #000000;
+}
+
+.content .info-item .option-color select {
+  color: #000000;
   border-radius: 5px;
-  border: 1px solid rgba(138, 27, 27, 1);
 }
 
-.content .info-item .option-quatity {
-  display: flex
+.content .info-item .option-color select:hover {
+  background-color: #440303;
+  color: #ffffff;
 }
 
-.content .info-item .option-quatity input {
+.content .info-item .option-quantity {
+  display: flex;
+}
+
+.content .info-item .option-quantity input {
   width: 5%;
   height: 25px;
 }
@@ -74,20 +91,118 @@
   font-weight: 500;
 }
 
-.detail-item .content button {
+.detail-item .content .info-item > button, .info-item .buy-now {
   background-color: #440303;
   color: #ffffff;
   border-radius: 50px;
   font-size: 1.25rem;
   border: none;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 10px 20px;
 }
 
-.detail-item .content .buy-now {
-  background-color: rgba(170, 5, 5, 1);
+.detail-item .content .info-item .add-cart {
+  background-color: #ffffff;
+  color: #440303;
+  border: 1px solid #440303;
 }
 
 .content .image .img-small img:hover {
-  box-shadow: 1px 2px 5px #8A1B1B;
+  box-shadow: 1px 2px 5px #8a1b1b;
+}
+
+.option-quantity > button,
+.option-quantity p {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  font-size: 1.3rem;
+  font-weight: 00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option-quantity button {
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+
+.option-quantity button:hover {
+  background-color: #440303;
+  border: 2px solid #440303;
+  color: #ffffff;
+}
+
+
+.info-item .title {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 10px 0;
+}
+
+.title-usage, .title-color, .title-storage {
+  font-family: "Roboto", sans-serif;
+  color: #8a1b1b;
+  cursor: pointer;
+  border-bottom: 1.5px solid rgba(138, 27, 27, 0.3);
+  padding: 0 30px;
+}
+
+.info-item ul li {
+  padding-top: 5px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
+.info-item ul {
+  color: #440303;
+  padding: 0 18% 20px 21%;
+}
+
+.usage, .color, .storage {
+  display: none;
+}
+
+.title-description {
+  border-bottom: 3px solid rgba(138, 27, 27, 1);
+  font-family: "Roboto", sans-serif;
+  color: #8a1b1b;
+  cursor: pointer;
+  padding: 0 30px;
+}
+
+@media (max-width: 1200px) {
+  .info-item ul {
+    padding: 0 16% 0 16%;
+  }
+}
+
+@media (max-width: 992px) {
+  .info-item ul {
+    padding: 0 6% 0 8%;
+  }
+
+  .content .image .img-small img {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-item ul {
+    padding: 0 0 0 5%;
+  }
+
+  .info-item h5 {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+
+  .content .image .img-small img {
+    height: 100px;
+    width: 100px;
+  }
 }

@@ -1,0 +1,118 @@
+.background {
+  background-image: url(/img/bg-image.webp);
+  height: 500px;
+  background-size: cover;
+  position: relative;
+}
+
+.cover-img {
+    position: relative;
+}
+
+.btn-like {
+    display: flex;
+    color: #1639B9;
+    position: absolute;
+    top: 90px;
+    left: 315px;
+    background-color: rgba(22, 57, 185, 0.2);
+    height: 30px;
+    padding: 5px;
+}
+
+.post {
+    background-color: #EEEEEE;
+    width: 82.2%;
+    margin-left: 38px;
+    padding: 40px 30px;
+}
+
+.content-post {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+.name-post {
+    display: flex;
+}
+
+.name-post > i {
+    font-size: 1.5rem;
+}
+
+.title-post {
+    display: flex;
+    justify-content: space-between
+}
+
+.title-post h4 {
+    margin-bottom: 0;
+}
+
+.title-post > i {
+    color: rgba(22, 57, 185, 1);
+}
+
+.active-status {
+    color: #C4C4C4;
+    margin-left: 30px;
+}
+
+.content-post span {
+    color: rgba(22, 57, 185, 1);
+}
+
+.detail-news {
+    padding: 10px;
+}
+
+.info-news {
+    display: flex;
+    justify-content: left;
+}
+
+.info-news .content {
+    display: flex;
+    margin-right: 30px;
+}
+
+.info-news .content i {
+    margin-right: 5px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+    /* đồng bộ màu viền btn với màu nền */
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    /* ko tạo viền khi ấn */
+}
+
+.page-item.active .page-link {
+    background-color: rgba(68, 3, 3, 1);
+    border-color: rgba(68, 3, 3, 1);
+}
+
+.page-link {
+    color: rgba(68, 3, 3, 1);
+}
+
+.page-link:hover {
+    color: #ffffff;
+    background-color: rgba(68, 3, 3, 1);
+}
+
+@media (max-width: 576px) {
+    .post {
+        background-color: #EEEEEE;
+        width: 76.3%;
+        margin-left: 55px;
+        padding: 40px 30px;
+    }
+
+    .detail-news {
+        padding: 25px;
+    }
+}
