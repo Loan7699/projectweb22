@@ -85,12 +85,12 @@ section .card-item .card-content .buy-now {
 }
 
 section .card-item:hover .buy-now {
-  background-color: #440303;
-  color: #ffffff;
+  background-color: rgba(138, 27, 27, 0.2);
+  color: #440303;
 }
 
 section .card-item:hover .buy-now p {
-  color: #ffffff;
+  color: #440303;
 }
 
 section .card-item .card-content .buy-now i {
@@ -109,18 +109,22 @@ section .card-item .card-content .buy-now a {
 }
 
 section .card-item:hover i {
-  color: #ffffff;
+  color: #440303;
 }
 
 section button {
-  background-color: #440303;
-  color: #ffffff;
-  width: 135px;
-  height: 40px;
-  border-radius: 50px;
+
+  background-color: #ffffff;
+  color: #440303;
+
   font-size: 1.25rem;
+  
+  border-radius: 50px;
   border: none;
   cursor: pointer;
+  padding: 8px 24px;
+  border: 1px solid #440303;
+
   margin-left: 48px;
 }
 

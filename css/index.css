@@ -76,10 +76,10 @@
 .content .title button {
   background-color: #ffffff;
   color: rgba(138, 27, 27, 1);
-  /* width: 135px; */
-  /* height: 40px; */
-  border-radius: 50px;
+
   font-size: 1.25rem;
+  
+  border-radius: 50px;
   border: none;
   cursor: pointer;
   padding: 10px 20px;
@@ -96,6 +96,7 @@
   border-radius: 5px;
   text-transform: uppercase;
 }
+
 
 .image h2 {
   width: 300px;
@@ -148,8 +149,8 @@
 }
 
 .content .card-item:hover .buy-now {
-  background-color: #440303;
-  color: #ffffff;
+  background-color: rgba(138, 27, 27, 0.2);
+  color: #440303;
 }
 
 .content .card-item .card-content .buy-now i {
@@ -163,7 +164,7 @@
 }
 
 .content .card-item:hover .buy-now p {
-  color: #ffffff;
+  color: #440303;
 }
 
 .content .card-item .card-content .buy-now a {
@@ -172,7 +173,7 @@
 }
 
 .content .card-item:hover i {
-  color: #ffffff;
+  color: #440303;
 }
 
 .app > .image {
@@ -185,7 +186,7 @@
 }
 
 .image > h2 {
-  margin-left: 36px;
+  margin-left: 60px;
 }
 
 .image p {
@@ -235,5 +236,6 @@ a {
     cursor: pointer;
     padding: 10px 20px;
     margin-right: 10px;
+    border: 1px solid #440303;
   }
 }

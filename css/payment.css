@@ -5,13 +5,12 @@
 
 .content h2 {
   color: rgba(138, 27, 27, 1);
+  
   font-size: 2rem;
-  /* padding-top: 16px; */
 }
 
 .custom-info,
 .order {
-  /* border: 2px solid rgba(68, 3, 3, 1); */
   border-radius: 5px;
   padding: 30px;
 }
@@ -21,18 +20,20 @@
 }
 
 .detail .order .item img {
-  width: 25%;
+  width: 30%;
 }
 
 .content .detail .custom-info > input,
 .content .detail select, .voucher input, .your-name {
   padding: 12px 20px;
-  margin: 18px 0;
-  display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+
   width: 100%;
+
+  display: inline-block;
+
 }
 
 .error-message{
@@ -41,12 +42,12 @@
 
 .contact-info > input {
   padding: 12px 20px;
-  margin: 18px 0;
-  display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+
   width: 100%;
+  display: inline-block;
 }
 
 .method-payment input {
@@ -65,14 +66,17 @@
 .detail .voucher button {
   background-color: #440303;
   color: #ffffff;
+
   width: 160px;
   height: 40px;
+
   border-radius: 50px;
-  font-size: 1.25rem;
   border: none;
-  cursor: pointer;
-  margin: 18px 0 0 15px;
+  margin: 0 0 0 15px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+  font-size: 1.25rem;
   text-transform: uppercase;
 }
 
@@ -84,26 +88,34 @@
 .btn {
     display: flex;
     justify-content: center;
+
     margin-bottom: 34px;
 }
 
 .btn a button {
-    background-color: 
-    rgba(170, 5, 5, 1);
+    background-color: #ffffff;
+    color: #440303;
+
+    border: 1px solid #440303;
+
+    font-weight: 500;
 }
 
 .btn button {
   background-color: #440303;
   color: #ffffff;
+
   width: 150px;
   height: 40px;
+
   border-radius: 50px;
   font-size: 1.25rem;
+  text-transform: uppercase;
+
   border: none;
   cursor: pointer;
   margin-left: 15px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  text-transform: uppercase;
 }
 
 

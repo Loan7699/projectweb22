@@ -264,7 +264,7 @@ function renderCard(arrBrand=[], arrType=[]) {
                     <p>${t.name}</p>
 
                     <div class="info">
-                        <p class="price">${t.price}</p>
+                        <p class="price">${convertMoney(Number(t.price))}</p>
                         <p class="sold">${t.sold}</p>
                     </div>
 
@@ -426,7 +426,7 @@ function addCard() {
                         <span class="quantity-product">1</span>
                     </span>
                    
-                    <i class="bi bi-pencil ms-4"></i>
+                    <a href="./detail-product.html"><i class="bi bi-pencil"></i></a>
                 </div>
             </div>
             <p class="me-5 mt-3 price">${productCart[i].price}</p>

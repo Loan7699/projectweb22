@@ -1,5 +1,8 @@
-.contact-page h2 {
+.contact-page h3 {
+  color: #000000;
+
   border-bottom: 1px solid #000000;
+  padding-bottom: 8px;
 }
 
 .box-send .form {
@@ -41,10 +44,12 @@ textarea {
 .box-send button {
   background-color: #ffffff;
   color: #000000;
-  border-radius: 50px;
+
   font-size: 1.25rem;
-  border: none;
   cursor: pointer;
+
+  border-radius: 50px;
+  border: none;
   padding: 10px 20px;
   border: 1px solid #000000;
   margin: 0 0 24px 25%;

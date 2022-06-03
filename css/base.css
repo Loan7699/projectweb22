@@ -25,3 +25,11 @@ body {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
 }
+
+input:focus, select:focus {
+    outline: 0;
+}
+  
+input[type='radio']:checked {
+    background-color: #440303;
+}

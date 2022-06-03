@@ -8,10 +8,10 @@
 
     <link
       rel="shortcut icon"
-      href="./img/favicon (1).ico"
+      href="./img/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="icon" href="./img/favicon (1).ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -41,17 +41,13 @@
               <span>Số lượng x</span>
               <span class="quantity-product">1</span>
             </p>
-            <i class="bi bi-pencil"></i>
+            <a href="./detail-product.html"><i class="bi bi-pencil"></i></a>
           </div>
         </div>
 
         <p class="me-5 mt-3 price">275000</p>
         <i class="bi bi-trash mt-3"></i>
       </div> -->
-
-      <!-- <a href="./products.html">
-      <p class="mt-2 mb-3">Thêm món</p>
-    </a> -->
 
       <div class="sum">
         <p>Tổng tiền</p>
@@ -77,7 +73,7 @@
           <input type="password" placeholder="Mật khẩu" />
         </div>
 
-        <button class="mb-4">Đăng nhập</button>
+        <button class="mb-4 btn-main">Đăng nhập</button>
 
         <p class="text-center">Quên mật khẩu?</p>
 
@@ -108,7 +104,7 @@
           <input type="text" placeholder="Nhập lại mật khẩu" />
         </div>
 
-        <button class="mb-3 mt-2">Đăng ký</button>
+        <button class="mb-3 mt-2 btn-main">Đăng ký</button>
 
         <p>Bạn đã có tài khoản?</p>
 
@@ -119,8 +115,10 @@
     <header>
       <div class="navbar">
         <div class="logo">
-          <i class="bi bi-flower1 pt-lg-2 pt-md-2 pt-0"></i>
-          <h1 class="name-shop ms-3">Daisy Corner</h1>
+          <a href="./index.html" class="mt-lg-2 pt-md-2 pt-0"><i class="bi bi-flower1"></i></a>
+          <a href="./index.html"
+            ><h1 class="name-shop ms-3">Daisy Corner</h1></a
+          >
         </div>
 
         <div class="menu">
@@ -141,7 +139,7 @@
           <div class="box-search me-1" type="text">
             <!--
             <span class="text-uppercase">search</span> -->
-            <input type="text" placeholder="SEARCH" />
+            <input type="text" value="SEARCH" />
             <i class="bi bi-search"></i>
           </div>
 
@@ -199,14 +197,13 @@
 
                 <div class="option-color">
                   <p>Màu sắc:</p>
-                  <select name="color" id="color-item">
-                    <option value="">M2</option>
-                    <option value="">M4</option>
-                    <option value="">M11</option>
-                    <option value="">M13</option>
-                    <option value="">M17</option>
-                  </select>
+                  <div class="color-item">
+                    <span>M2</span><span>M4</span><span>M11</span
+                    ><span>M13</span><span>M17</span>
+                  </div>
                 </div>
+
+                <p class="note">Vui lòng chọn màu sắc (*)</p>
 
                 <div class="option-quantity mt-4">
                   <span class="pe-4">Số lượng:</span>
@@ -215,11 +212,12 @@
                   <button class="btn-add">+</button>
                 </div>
 
-                <p class="note">Vui lòng chọn màu sắc (*)</p>
-                <button class="mb-md-3 add-cart">
+                <button class="mb-md-3 add-cart mt-2">
                   <i class="bi bi-cart pe-1"></i>Thêm vào giỏ hàng
                 </button>
-                <a href="./payment.html"><button class="buy-now ms-md-5">Mua ngay</button></a>
+                <a href="./payment.html"
+                  ><button class="buy-now ms-md-5">Mua ngay</button></a
+                >
               </div>
             </div>
           </div>
@@ -331,10 +329,10 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="logo-image">
-              <i class="bi bi-flower1"></i>
+              <a href="./index.html"><i class="bi bi-flower1"></i></a>
             </div>
 
-            <div class="logo-name">Daisy Corner</div>
+            <a href="./index.html"><h2 class="logo-name">Daisy Corner</h2></a>
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-12">

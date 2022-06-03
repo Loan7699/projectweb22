@@ -148,14 +148,14 @@ function formValidate() {
 
     if(name.value.trim() == '') {
         isValid = false
-        name.closest('.profile-item').querySelector('.error-message').innerHTML = 'Vui lòng nhập họ tên *'
+        name.closest('.profile-item').querySelector('.error-message').innerHTML = 'Vui lòng nhập họ tên'
     } else {
         name.closest('.profile-item').querySelector('.error-message').innerHTML = ''
     }
 
     if(tel.value.trim() == '') {
         isValid = false
-        tel.closest('.profile-item').querySelector('.error-message').innerHTML = 'Vui lòng nhập số điện thoại *'
+        tel.closest('.profile-item').querySelector('.error-message').innerHTML = 'Vui lòng nhập số điện thoại'
     }else if(!regexNumber.test(tel.value)) {
         isValid = false
         tel.closest('.profile-item').querySelector('.error-message').innerHTML = 'Số điện thoại không đúng'
@@ -165,7 +165,7 @@ function formValidate() {
 
     if(add.value.trim() == '') {
         isValid = false
-        add.closest('.profile-item').querySelector('.error-message').innerHTML = 'Vui lòng nhập địa chỉ *'
+        add.closest('.profile-item').querySelector('.error-message').innerHTML = 'Vui lòng nhập địa chỉ'
     }else {
         add.closest('.profile-item').querySelector('.error-message').innerHTML = ''
     }

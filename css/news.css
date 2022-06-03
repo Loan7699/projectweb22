@@ -11,19 +11,18 @@
 
 .btn-like {
     display: flex;
-    color: #1639B9;
-    position: absolute;
-    top: 90px;
-    left: 315px;
+    position: sticky;
+
     background-color: rgba(22, 57, 185, 0.2);
+    color: #1639B9;
+
     height: 30px;
+    width: 100px;
     padding: 5px;
 }
 
 .post {
     background-color: #EEEEEE;
-    width: 82.2%;
-    margin-left: 38px;
     padding: 40px 30px;
 }
 
@@ -63,7 +62,11 @@
 }
 
 .detail-news {
-    padding: 10px;
+    padding: 10px 0;
+}
+
+.news img {
+    width: 100%;
 }
 
 .info-news {
